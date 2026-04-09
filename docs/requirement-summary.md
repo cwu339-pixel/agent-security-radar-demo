@@ -1,4 +1,4 @@
-# Agent Security Interview Prompt: Requirement Summary And Working Interpretation
+# Agent Security 面试题需求总结与理解
 
 ## 1. Original Prompt
 
@@ -10,7 +10,7 @@
 > 可以提交各种类型文档和 GitHub 代码。  
 > 重点主要体现思路，项目结果次要。
 
-## 2. What The Interviewer Is Actually Testing
+## 2. 面试官真正想看什么
 
 这题表面上像“做一个情报 Agent”，但本质上更像一道：
 
@@ -27,9 +27,9 @@
 5. 排序逻辑怎么做到可解释
 6. 最终输出如何真正服务投资决策
 
-## 3. Requirement Clarification
+## 3. 需求澄清
 
-### 3.1 This Is Not Just A News Summarizer
+### 3.1 这不是一个普通的新闻摘要系统
 
 如果把题目理解成“每天搜新闻然后生成一份 summary”，理解就偏了。
 
@@ -43,7 +43,7 @@
 - 已有公司的重要变化
 - 当前最值得优先看的 Top list
 
-### 3.2 The Hard Part Is Not Search, But Definition And Aggregation
+### 3.2 难点不是搜索，而是定义和归并
 
 这道题最关键的两步不是“抓很多来源”，而是：
 
@@ -59,9 +59,9 @@
 - 结论无法追溯
 - 输出缺少可信度
 
-## 4. Working Interpretation Of The Scope
+## 4. 当前推荐的理解方式
 
-### 4.1 What Counts As An Agent Security Company
+### 4.1 什么叫 Agent Security 公司
 
 目前推荐的工作定义如下：
 
@@ -69,11 +69,11 @@
 
 这个定义强调的是：
 
-- protecting AI agents
-- controlling agent behavior
-- governing tool usage and permissions
-- preventing prompt injection / tool misuse
-- monitoring or auditing agent actions
+- 保护 AI agents
+- 控制 agent 行为
+- 管理工具调用和权限
+- 防止 prompt injection / tool misuse
+- 监控和审计 agent 行为
 
 它不等于：
 
@@ -81,7 +81,7 @@
 - general AI security
 - traditional cybersecurity with AI branding
 
-### 4.2 Universe Segmentation
+### 4.2 目标池分层
 
 为了让筛选稳定，建议把目标池分成三层：
 
@@ -120,11 +120,11 @@
 - 纯研究团队，没有公司化产品
 - 只做模型效果优化，不做控制和防护
 
-## 5. Proposed System Understanding
+## 5. 当前推荐的系统理解
 
 当前推荐把系统理解为一个六层流水线，而不是一个聊天机器人。
 
-### Layer 1: Source Ingestion
+### Layer 1：信号采集
 
 为不同来源建立 adapter，定时抓取新内容，统一存成标准 `raw signal`。
 
@@ -137,7 +137,7 @@
 - title
 - metadata
 
-### Layer 2: Relevance Filtering
+### Layer 2：相关性过滤
 
 先做低成本过滤，只保留和 Agent 安全目标池高相关的内容。
 
@@ -148,7 +148,7 @@
 - embedding similarity
 - source weighting
 
-### Layer 3: Structured Extraction
+### Layer 3：结构化抽取
 
 用 LLM 从文本中抽结构化字段，而不是直接让它判断值不值得投。
 
@@ -162,7 +162,7 @@
 - customer/funding/hiring/github/paper signals
 - confidence
 
-### Layer 4: Entity Resolution / Company Profile Layer
+### Layer 4：实体归并 / 公司画像层
 
 把不同来源对同一公司的提及合并到一个 company profile 下。
 
@@ -249,4 +249,3 @@ company profile 至少应包含：
 3. scoring rubric 的每一项证据如何映射到分值
 4. 哪些来源属于高可信源，权重如何设置
 5. push 逻辑是 daily brief 还是 event-driven alert
-

@@ -1,43 +1,43 @@
-# Workflow Design
+# 业务流程设计
 
-## Design Principle
+## 设计原则
 
-This system should be understood as a `continuous sourcing workflow`, not as a chatbot.
+这套系统应该被理解成一条 `持续运行的投研 workflow`，而不是一个 chatbot。
 
-The main product is not conversation. The main product is an investor-ready ranking of companies supported by evidence.
+它的主产品不是对话，而是一份基于证据的、面向投资人的公司优先级列表。
 
-## End-to-End Workflow
+## 端到端流程
 
-### 1. Source Ingestion
+### 1. 信号采集
 
-Adapters collect representative signals from sources such as:
+系统从这些来源收集代表性信号：
 
 - X / Twitter
 - LinkedIn
 - GitHub
-- news
-- official websites
-- research and databases
+- 新闻
+- 官网与产品文档
+- 研究和数据库
 
-Each signal is normalized into a common schema so later stages do not need source-specific logic.
+所有信号统一成标准 schema，避免后续逻辑按来源分别处理。
 
-### 2. Relevance And Universe Classification
+### 2. 相关性与目标池分类
 
-Before ranking anything, the system determines whether a signal belongs to the target investment universe.
+在排序之前，系统先判断这条信号是否属于目标投资范围。
 
-This stage answers:
+这一层要回答：
 
-- Is this related to agent security at all?
-- Is the company `core`, `adjacent`, or `out_of_scope`?
-- Which category best describes it?
+- 它是不是和 Agent Security 有关
+- 属于 `core`、`adjacent` 还是 `out_of_scope`
+- 更具体属于哪一类
 
-This prevents broad AI security or general agent companies from polluting the primary ranking.
+这样做的目的，是避免泛 AI security 或通用 agent 公司污染主榜单。
 
-### 3. Company Profile Layer
+### 3. 公司画像层
 
-This is the center of the workflow.
+这是整个 workflow 的中心。
 
-Different sources may refer to the same company with different aliases. The workflow merges those signals into one company profile containing:
+不同来源可能会用不同名字提到同一家公司。系统会把这些信号合并成一个 company profile，其中至少包含：
 
 - canonical name
 - aliases
@@ -46,11 +46,11 @@ Different sources may refer to the same company with different aliases. The work
 - score breakdown
 - unknowns
 
-This is the step that turns fragmented market noise into something an investor can reason about.
+这一步把碎片化的市场噪音，变成投资人可以真正使用的对象。
 
-### 4. Evidence-Backed Scoring
+### 4. 可解释打分
 
-Each profile is ranked using five dimensions:
+每个 company profile 按五个维度排序：
 
 - Team
 - Market
@@ -58,36 +58,39 @@ Each profile is ranked using five dimensions:
 - Tech
 - Momentum
 
-The point of the scoring system is not to produce fake precision. The point is to force the workflow to be explicit about why one company deserves attention before another.
+打分的目的不是制造精确假象，而是强制系统回答：
 
-### 5. Investor-Facing Output
+> 为什么这个名字比另一个名字更值得优先关注？
 
-The final output is a short list of candidate cards with:
+### 5. 面向投资人的输出
 
-- universe tier
-- category
-- score breakdown
+最终输出是一份候选公司卡片 shortlist，包含：
+
+- 目标池分层
+- 赛道类别
+- 分数拆解
 - why now
-- key evidence
+- 关键证据
 - unknowns
 - follow-up questions
 
-This lets an investor decide where to spend the next 20 minutes of attention.
+这能帮助投资人在有限时间里判断“接下来先花 20 分钟看谁”。
 
-## Why This Workflow Is VC-Friendly
+## 为什么这条 workflow 适合 VC
 
-It maps directly onto how a research or investment team works:
+它和真实的投研动作是一致的：
 
-- define target universe
-- discover candidates
-- collect evidence
-- compare opportunities
-- hand off the best names for analyst review
+- 定义目标池
+- 发现候选公司
+- 收集证据
+- 横向比较
+- 把最值得看的名字交给分析师继续跟
 
-## Why The MVP Is Sufficient
+## 为什么这个 MVP 已经够了
 
-A production system would add live ingestion, scheduling, and richer extraction. But for interview purposes, the critical proof is narrower:
+真实生产系统当然还会加上实时抓取、调度、更多抽取能力。  
+但面试里更重要的问题是：
 
-> Can this sourcing workflow be clearly defined, made explainable, and demonstrated with a minimal executable prototype?
+> 这条投研 workflow 能不能被清楚定义、解释清楚，并且用最小原型证明它是可执行的？
 
-This MVP is designed to answer yes.
+这个 MVP 证明的就是这件事。

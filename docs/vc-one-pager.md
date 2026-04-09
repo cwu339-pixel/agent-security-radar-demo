@@ -1,60 +1,60 @@
-# VC One-Pager
+# VC 一页纸
 
-## Problem
+## 问题
 
-An investment team tracking agent security companies faces four recurring problems:
+一个关注 Agent Security 赛道的投资团队，通常会遇到四个问题：
 
-- the target universe is poorly defined
-- new companies are discovered too late or inconsistently
-- evidence is fragmented across many sources
-- analyst attention is wasted on low-priority names
+- 目标池边界不清楚
+- 新公司发现得不够早，也不稳定
+- 证据分散在不同来源里
+- 分析师的注意力浪费在低优先级名字上
 
-The question is not “can we search the web?” The question is:
+真正的问题不是“能不能搜到网页”，而是：
 
-> How do we turn noisy public signals into an explainable, investor-ready short list?
+> 怎么把嘈杂的公开信号，变成一份可解释、可行动的投资 shortlist？
 
-## Why Now
+## 为什么是现在
 
-Agent security is emerging as a distinct area within AI infrastructure and enterprise security. As agents gain tool access, memory, permissions, and external execution capabilities, new company categories are appearing around:
+Agent 安全正在逐渐成为 AI 基础设施和企业安全里的独立问题域。随着 agent 拿到工具调用、记忆、权限和执行能力，新的公司类型正在出现，例如：
 
-- runtime controls
-- prompt and tool injection defense
+- runtime control
+- prompt / tool injection defense
 - policy enforcement
-- identity and access for agents
+- agent identity and access
 - observability and audit
-- sandboxing and containment
+- sandboxing
 
-This creates a sourcing problem: relevant companies can appear in social posts, hiring pages, product blogs, open source repos, databases, and research long before they become obvious market leaders.
+这意味着很多相关公司会先出现在社交媒体、招聘页、技术博客、开源仓库和研究资料里，而不是先出现在标准数据库里。
 
-## What The System Does For Investors
+## 这个系统给投资团队带来什么
 
-This system is designed to support a VC workflow, not just summarize content.
+这套系统不是做内容摘要，而是做 VC workflow 支持。
 
-It helps an investment team:
+它帮助投资团队：
 
-- define what belongs in the agent security universe
-- continuously surface new candidate companies
-- merge fragmented evidence into one company profile
-- rank opportunities using an explainable rubric
-- hand analysts a short list with `why now`, `unknowns`, and `follow-up questions`
+- 定义什么公司属于 Agent Security 目标池
+- 持续发现新候选公司
+- 把零散证据整理成公司画像
+- 用可解释的规则完成排序
+- 给分析师一份带有 `why now`、`unknowns` 和 `follow-up questions` 的 shortlist
 
-## What The MVP Proves
+## MVP 证明什么
 
-The MVP does not use live data. Instead, it proves the logic of the workflow:
+这个 MVP 不用真实线上数据，主要证明 workflow 的逻辑成立：
 
-- representative signals can be normalized
-- company aliases can be merged
-- names can be labeled as `core`, `adjacent`, or `out_of_scope`
-- candidate cards can be generated in an investment-friendly format
+- 代表性多源信号可以被统一表示
+- 公司别名可以归并
+- 公司可以被标记为 `core`、`adjacent` 或 `out_of_scope`
+- 候选公司卡片可以被自动生成，且适合投资场景阅读
 
-## What Remains Intentionally Out Of Scope
+## 明确不在这次范围里的内容
 
-This package intentionally does not include:
+这份交付故意不包含：
 
-- live crawling of paid or restricted sources
-- 24x7 orchestration
-- live model-based extraction
-- CRM integration
-- a production dashboard
+- 付费或受限数据源的真实抓取
+- 完整 7x24 编排
+- 线上 LLM 抽取稳定性
+- CRM 集成
+- 生产级 dashboard
 
-Those are implementation extensions. The interview objective here is to prove that the workflow design is coherent and useful for a VC team.
+这些属于后续扩展。当前面试更重要的是证明：这套 workflow 是清楚的，而且对 VC 团队有用。

@@ -45,10 +45,10 @@ class PipelineTests(unittest.TestCase):
         ranked = rank_companies(build_company_cards(signals))
         brief = render_brief(ranked, generated_on="2026-04-08")
 
-        self.assertIn("Top Candidates", brief)
-        self.assertIn("Why now", brief)
-        self.assertIn("Unknowns", brief)
-        self.assertIn("Follow-up questions", brief)
+        self.assertIn("重点候选公司", brief)
+        self.assertIn("为什么现在值得看", brief)
+        self.assertIn("目前还不知道什么", brief)
+        self.assertIn("建议下一步追问", brief)
 
 
 if __name__ == "__main__":

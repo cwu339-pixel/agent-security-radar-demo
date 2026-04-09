@@ -55,23 +55,23 @@ CORE_CATEGORY_HINTS = {
 }
 
 CATEGORY_LABELS = {
-    "agent_runtime_security": "Agent Runtime Security",
-    "tool_permissioning": "Tool Permissioning",
-    "agent_identity_access": "Agent Identity & Access",
-    "prompt_injection_defense": "Prompt Injection Defense",
-    "policy_guardrails": "Policy Guardrails",
-    "agent_observability_audit": "Agent Observability & Audit",
-    "agent_sandboxing": "Agent Sandboxing",
-    "adjacent_ai_security": "Adjacent AI Security",
-    "out_of_scope": "Out of Scope",
+    "agent_runtime_security": "Agent 运行时安全",
+    "tool_permissioning": "工具权限控制",
+    "agent_identity_access": "Agent 身份与访问控制",
+    "prompt_injection_defense": "提示词与工具注入防护",
+    "policy_guardrails": "策略护栏",
+    "agent_observability_audit": "Agent 可观测性与审计",
+    "agent_sandboxing": "Agent 沙箱隔离",
+    "adjacent_ai_security": "相邻 AI 安全",
+    "out_of_scope": "不在目标范围内",
 }
 
 FOLLOW_UP_QUESTIONS = {
-    "team": "Do the founders have repeat security or AI infrastructure wins?",
-    "market": "Is the company truly focused on agent security versus broader AI security?",
-    "business": "Are there paying customers or only pilots and design partners?",
-    "tech": "Is the technical moat visible in code, product docs, or research?",
-    "momentum": "Is the recent activity sustained or just a single announcement spike?",
+    "team": "创始人是否有连续创业，或安全 / AI infra 相关成功经历？",
+    "market": "这家公司是真的在做 agent security，还是更偏广义 AI security？",
+    "business": "现在有真实付费客户，还是还停留在试点 / design partner 阶段？",
+    "tech": "它的技术壁垒能否从代码、文档或研究中被直接看出来？",
+    "momentum": "最近的热度是持续信号，还是一次性的公告带来的短期波动？",
 }
 
 
@@ -118,11 +118,11 @@ def build_company_cards(signals: list[dict]) -> list[dict]:
                 card["score_breakdown"][bucket] += points
 
         if "agent_security_focus" in signal["tags"]:
-            card["why_now"].append("Directly framed around agent security use cases.")
+            card["why_now"].append("公开表述明确围绕 agent security 使用场景展开。")
         elif "customer_signal" in signal["tags"]:
-            card["why_now"].append("Customer or partner evidence suggests commercial pull.")
+            card["why_now"].append("客户或合作伙伴信号说明它已经有一定商业牵引。")
         elif "funding_signal" in signal["tags"]:
-            card["why_now"].append("Recent funding or financing signal suggests momentum.")
+            card["why_now"].append("最近的融资或资金相关信号说明它有一定市场动量。")
 
     cards: list[dict] = []
     for card in grouped.values():
@@ -195,12 +195,12 @@ def build_unknowns(score_breakdown: dict[str, int], universe_tier: str) -> list[
     unknowns: list[str] = []
 
     if score_breakdown.get("team", 0) < 6:
-        unknowns.append("Founder and operator credibility still needs direct verification.")
+        unknowns.append("创始人与核心团队的履历还需要进一步确认。")
     if score_breakdown.get("business", 0) < 10:
-        unknowns.append("Commercial traction is still thin from public evidence.")
+        unknowns.append("从公开信息看，商业化牵引还比较薄弱。")
     if universe_tier == "adjacent":
-        unknowns.append("Needs a sharper wedge into agent-native security, not just broader AI security.")
+        unknowns.append("还需要进一步确认它是否真的切入了 agent-native security，而不只是更广义的 AI security。")
     if universe_tier == "out_of_scope":
-        unknowns.append("This looks relevant to agents, but not to the agent security investment universe.")
+        unknowns.append("它和 agent 有关，但并不属于 agent security 的核心投资范围。")
 
     return unknowns[:2]

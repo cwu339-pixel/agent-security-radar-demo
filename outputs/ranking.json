@@ -43,7 +43,7 @@
         ]
       }
     ],
-    "category": "Agent Runtime Security",
+    "category": "Agent \u8fd0\u884c\u65f6\u5b89\u5168",
     "universe_tier": "core",
     "score_breakdown": {
       "market": 19,
@@ -54,11 +54,11 @@
     },
     "total_score": 75,
     "why_now": [
-      "Directly framed around agent security use cases."
+      "\u516c\u5f00\u8868\u8ff0\u660e\u786e\u56f4\u7ed5 agent security \u4f7f\u7528\u573a\u666f\u5c55\u5f00\u3002"
     ],
     "unknowns": [],
     "follow_up_questions": [
-      "Do the founders have repeat security or AI infrastructure wins?"
+      "\u521b\u59cb\u4eba\u662f\u5426\u6709\u8fde\u7eed\u521b\u4e1a\uff0c\u6216\u5b89\u5168 / AI infra \u76f8\u5173\u6210\u529f\u7ecf\u5386\uff1f"
     ]
   },
   {
@@ -103,7 +103,7 @@
         ]
       }
     ],
-    "category": "Agent Observability & Audit",
+    "category": "Agent \u53ef\u89c2\u6d4b\u6027\u4e0e\u5ba1\u8ba1",
     "universe_tier": "core",
     "score_breakdown": {
       "market": 19,
@@ -114,12 +114,12 @@
     },
     "total_score": 68,
     "why_now": [
-      "Directly framed around agent security use cases.",
-      "Customer or partner evidence suggests commercial pull."
+      "\u516c\u5f00\u8868\u8ff0\u660e\u786e\u56f4\u7ed5 agent security \u4f7f\u7528\u573a\u666f\u5c55\u5f00\u3002",
+      "\u5ba2\u6237\u6216\u5408\u4f5c\u4f19\u4f34\u4fe1\u53f7\u8bf4\u660e\u5b83\u5df2\u7ecf\u6709\u4e00\u5b9a\u5546\u4e1a\u7275\u5f15\u3002"
     ],
     "unknowns": [],
     "follow_up_questions": [
-      "Is the recent activity sustained or just a single announcement spike?"
+      "\u6700\u8fd1\u7684\u70ed\u5ea6\u662f\u6301\u7eed\u4fe1\u53f7\uff0c\u8fd8\u662f\u4e00\u6b21\u6027\u7684\u516c\u544a\u5e26\u6765\u7684\u77ed\u671f\u6ce2\u52a8\uff1f"
     ]
   },
   {
@@ -153,7 +153,7 @@
         ]
       }
     ],
-    "category": "Adjacent AI Security",
+    "category": "\u76f8\u90bb AI \u5b89\u5168",
     "universe_tier": "adjacent",
     "score_breakdown": {
       "market": 2,
@@ -163,14 +163,14 @@
     },
     "total_score": 33,
     "why_now": [
-      "Recent funding or financing signal suggests momentum."
+      "\u6700\u8fd1\u7684\u878d\u8d44\u6216\u8d44\u91d1\u76f8\u5173\u4fe1\u53f7\u8bf4\u660e\u5b83\u6709\u4e00\u5b9a\u5e02\u573a\u52a8\u91cf\u3002"
     ],
     "unknowns": [
-      "Founder and operator credibility still needs direct verification.",
-      "Commercial traction is still thin from public evidence."
+      "\u521b\u59cb\u4eba\u4e0e\u6838\u5fc3\u56e2\u961f\u7684\u5c65\u5386\u8fd8\u9700\u8981\u8fdb\u4e00\u6b65\u786e\u8ba4\u3002",
+      "\u4ece\u516c\u5f00\u4fe1\u606f\u770b\uff0c\u5546\u4e1a\u5316\u7275\u5f15\u8fd8\u6bd4\u8f83\u8584\u5f31\u3002"
     ],
     "follow_up_questions": [
-      "Do the founders have repeat security or AI infrastructure wins?"
+      "\u521b\u59cb\u4eba\u662f\u5426\u6709\u8fde\u7eed\u521b\u4e1a\uff0c\u6216\u5b89\u5168 / AI infra \u76f8\u5173\u6210\u529f\u7ecf\u5386\uff1f"
     ]
   },
   {
@@ -204,7 +204,7 @@
         ]
       }
     ],
-    "category": "Adjacent AI Security",
+    "category": "\u76f8\u90bb AI \u5b89\u5168",
     "universe_tier": "adjacent",
     "score_breakdown": {
       "market": 7,
@@ -213,14 +213,14 @@
     },
     "total_score": 31,
     "why_now": [
-      "Customer or partner evidence suggests commercial pull."
+      "\u5ba2\u6237\u6216\u5408\u4f5c\u4f19\u4f34\u4fe1\u53f7\u8bf4\u660e\u5b83\u5df2\u7ecf\u6709\u4e00\u5b9a\u5546\u4e1a\u7275\u5f15\u3002"
     ],
     "unknowns": [
-      "Founder and operator credibility still needs direct verification.",
-      "Needs a sharper wedge into agent-native security, not just broader AI security."
+      "\u521b\u59cb\u4eba\u4e0e\u6838\u5fc3\u56e2\u961f\u7684\u5c65\u5386\u8fd8\u9700\u8981\u8fdb\u4e00\u6b65\u786e\u8ba4\u3002",
+      "\u8fd8\u9700\u8981\u8fdb\u4e00\u6b65\u786e\u8ba4\u5b83\u662f\u5426\u771f\u7684\u5207\u5165\u4e86 agent-native security\uff0c\u800c\u4e0d\u53ea\u662f\u66f4\u5e7f\u4e49\u7684 AI security\u3002"
     ],
     "follow_up_questions": [
-      "Do the founders have repeat security or AI infrastructure wins?"
+      "\u521b\u59cb\u4eba\u662f\u5426\u6709\u8fde\u7eed\u521b\u4e1a\uff0c\u6216\u5b89\u5168 / AI infra \u76f8\u5173\u6210\u529f\u7ecf\u5386\uff1f"
     ]
   },
   {
@@ -252,7 +252,7 @@
         ]
       }
     ],
-    "category": "Out of Scope",
+    "category": "\u4e0d\u5728\u76ee\u6807\u8303\u56f4\u5185",
     "universe_tier": "out_of_scope",
     "score_breakdown": {
       "momentum": 4,
@@ -261,11 +261,11 @@
     "total_score": 9,
     "why_now": [],
     "unknowns": [
-      "Founder and operator credibility still needs direct verification.",
-      "Commercial traction is still thin from public evidence."
+      "\u521b\u59cb\u4eba\u4e0e\u6838\u5fc3\u56e2\u961f\u7684\u5c65\u5386\u8fd8\u9700\u8981\u8fdb\u4e00\u6b65\u786e\u8ba4\u3002",
+      "\u4ece\u516c\u5f00\u4fe1\u606f\u770b\uff0c\u5546\u4e1a\u5316\u7275\u5f15\u8fd8\u6bd4\u8f83\u8584\u5f31\u3002"
     ],
     "follow_up_questions": [
-      "Do the founders have repeat security or AI infrastructure wins?"
+      "\u521b\u59cb\u4eba\u662f\u5426\u6709\u8fde\u7eed\u521b\u4e1a\uff0c\u6216\u5b89\u5168 / AI infra \u76f8\u5173\u6210\u529f\u7ecf\u5386\uff1f"
     ]
   }
 ]
