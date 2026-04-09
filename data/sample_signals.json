@@ -1,0 +1,122 @@
+[
+  {
+    "source": "X",
+    "source_type": "social",
+    "company_ref": "Noma",
+    "url": "https://example.com/noma-x",
+    "headline": "Noma discusses securing enterprise AI agents",
+    "published_at": "2026-04-07",
+    "tags": ["agent_security_focus", "enterprise_security", "launch_signal", "customer_signal"],
+    "category_hint": "agent_runtime_security"
+  },
+  {
+    "source": "LinkedIn",
+    "source_type": "professional",
+    "company_ref": "Noma Security",
+    "url": "https://example.com/noma-linkedin",
+    "headline": "Noma Security is hiring detection engineers",
+    "published_at": "2026-04-05",
+    "tags": ["hiring_signal", "team_security_background", "momentum_signal"],
+    "category_hint": "agent_runtime_security"
+  },
+  {
+    "source": "GitHub",
+    "source_type": "code",
+    "company_ref": "noma-security",
+    "url": "https://example.com/noma-github",
+    "headline": "Reference policy pack for agent runtime guardrails",
+    "published_at": "2026-04-04",
+    "tags": ["github_activity", "technical_depth", "agent_security_focus"],
+    "category_hint": "policy_guardrails"
+  },
+  {
+    "source": "News",
+    "source_type": "news",
+    "company_ref": "Witness AI",
+    "url": "https://example.com/witness-news",
+    "headline": "WitnessAI expands AI governance coverage for enterprise assistants",
+    "published_at": "2026-04-07",
+    "tags": ["agent_security_focus", "enterprise_security", "customer_signal"],
+    "category_hint": "agent_observability_audit"
+  },
+  {
+    "source": "Blog",
+    "source_type": "content",
+    "company_ref": "WitnessAI",
+    "url": "https://example.com/witness-blog",
+    "headline": "WitnessAI on runtime policy enforcement for agents",
+    "published_at": "2026-04-03",
+    "tags": ["technical_depth", "paper_or_blog", "agent_security_focus"],
+    "category_hint": "policy_guardrails"
+  },
+  {
+    "source": "LinkedIn",
+    "source_type": "professional",
+    "company_ref": "WitnessAI",
+    "url": "https://example.com/witness-linkedin",
+    "headline": "WitnessAI announces new enterprise design partners",
+    "published_at": "2026-04-02",
+    "tags": ["customer_signal", "momentum_signal", "team_ai_infra_background"],
+    "category_hint": "agent_observability_audit"
+  },
+  {
+    "source": "News",
+    "source_type": "news",
+    "company_ref": "Adaptive Security",
+    "url": "https://example.com/adaptive-news",
+    "headline": "Adaptive Security raises awareness around AI-powered social engineering",
+    "published_at": "2026-04-01",
+    "tags": ["ai_security_adjacent", "funding_signal", "customer_signal"],
+    "category_hint": "adjacent_ai_security"
+  },
+  {
+    "source": "Website",
+    "source_type": "website",
+    "company_ref": "Adaptive",
+    "url": "https://example.com/adaptive-site",
+    "headline": "Adaptive Security protects employees from AI attacks",
+    "published_at": "2026-04-06",
+    "tags": ["ai_security_adjacent", "enterprise_security", "gtm_signal"],
+    "category_hint": "adjacent_ai_security"
+  },
+  {
+    "source": "News",
+    "source_type": "news",
+    "company_ref": "Protect AI",
+    "url": "https://example.com/protectai-news",
+    "headline": "Protect AI adds model scanning and supply chain controls",
+    "published_at": "2026-04-05",
+    "tags": ["ai_security_adjacent", "technical_depth", "funding_signal"],
+    "category_hint": "adjacent_ai_security"
+  },
+  {
+    "source": "GitHub",
+    "source_type": "code",
+    "company_ref": "ProtectAI",
+    "url": "https://example.com/protectai-github",
+    "headline": "Open source model scanning tools remain active",
+    "published_at": "2026-04-02",
+    "tags": ["github_activity", "technical_depth", "open_source_signal"],
+    "category_hint": "adjacent_ai_security"
+  },
+  {
+    "source": "News",
+    "source_type": "news",
+    "company_ref": "Cognition",
+    "url": "https://example.com/cognition-news",
+    "headline": "Cognition ships a new coding agent for software teams",
+    "published_at": "2026-04-07",
+    "tags": ["agent_builder", "launch_signal"],
+    "category_hint": "out_of_scope"
+  },
+  {
+    "source": "Website",
+    "source_type": "website",
+    "company_ref": "Cognition Labs",
+    "url": "https://example.com/cognition-site",
+    "headline": "Cognition builds autonomous software engineering agents",
+    "published_at": "2026-04-06",
+    "tags": ["agent_builder", "gtm_signal"],
+    "category_hint": "out_of_scope"
+  }
+]

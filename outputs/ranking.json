@@ -1,0 +1,271 @@
+[
+  {
+    "company_id": "noma-security",
+    "display_name": "Noma Security",
+    "aliases_seen": [
+      "Noma",
+      "Noma Security",
+      "noma-security"
+    ],
+    "evidence": [
+      {
+        "headline": "Noma discusses securing enterprise AI agents",
+        "source": "X",
+        "published_at": "2026-04-07",
+        "url": "https://example.com/noma-x",
+        "tags": [
+          "agent_security_focus",
+          "enterprise_security",
+          "launch_signal",
+          "customer_signal"
+        ]
+      },
+      {
+        "headline": "Noma Security is hiring detection engineers",
+        "source": "LinkedIn",
+        "published_at": "2026-04-05",
+        "url": "https://example.com/noma-linkedin",
+        "tags": [
+          "hiring_signal",
+          "team_security_background",
+          "momentum_signal"
+        ]
+      },
+      {
+        "headline": "Reference policy pack for agent runtime guardrails",
+        "source": "GitHub",
+        "published_at": "2026-04-04",
+        "url": "https://example.com/noma-github",
+        "tags": [
+          "github_activity",
+          "technical_depth",
+          "agent_security_focus"
+        ]
+      }
+    ],
+    "category": "Agent Runtime Security",
+    "universe_tier": "core",
+    "score_breakdown": {
+      "market": 19,
+      "tech": 20,
+      "business": 15,
+      "momentum": 13,
+      "team": 8
+    },
+    "total_score": 75,
+    "why_now": [
+      "Directly framed around agent security use cases."
+    ],
+    "unknowns": [],
+    "follow_up_questions": [
+      "Do the founders have repeat security or AI infrastructure wins?"
+    ]
+  },
+  {
+    "company_id": "witnessai",
+    "display_name": "WitnessAI",
+    "aliases_seen": [
+      "Witness AI",
+      "WitnessAI"
+    ],
+    "evidence": [
+      {
+        "headline": "WitnessAI expands AI governance coverage for enterprise assistants",
+        "source": "News",
+        "published_at": "2026-04-07",
+        "url": "https://example.com/witness-news",
+        "tags": [
+          "agent_security_focus",
+          "enterprise_security",
+          "customer_signal"
+        ]
+      },
+      {
+        "headline": "WitnessAI on runtime policy enforcement for agents",
+        "source": "Blog",
+        "published_at": "2026-04-03",
+        "url": "https://example.com/witness-blog",
+        "tags": [
+          "technical_depth",
+          "paper_or_blog",
+          "agent_security_focus"
+        ]
+      },
+      {
+        "headline": "WitnessAI announces new enterprise design partners",
+        "source": "LinkedIn",
+        "published_at": "2026-04-02",
+        "url": "https://example.com/witness-linkedin",
+        "tags": [
+          "customer_signal",
+          "momentum_signal",
+          "team_ai_infra_background"
+        ]
+      }
+    ],
+    "category": "Agent Observability & Audit",
+    "universe_tier": "core",
+    "score_breakdown": {
+      "market": 19,
+      "tech": 18,
+      "business": 19,
+      "momentum": 5,
+      "team": 7
+    },
+    "total_score": 68,
+    "why_now": [
+      "Directly framed around agent security use cases.",
+      "Customer or partner evidence suggests commercial pull."
+    ],
+    "unknowns": [],
+    "follow_up_questions": [
+      "Is the recent activity sustained or just a single announcement spike?"
+    ]
+  },
+  {
+    "company_id": "protect-ai",
+    "display_name": "Protect AI",
+    "aliases_seen": [
+      "Protect AI",
+      "ProtectAI"
+    ],
+    "evidence": [
+      {
+        "headline": "Protect AI adds model scanning and supply chain controls",
+        "source": "News",
+        "published_at": "2026-04-05",
+        "url": "https://example.com/protectai-news",
+        "tags": [
+          "ai_security_adjacent",
+          "technical_depth",
+          "funding_signal"
+        ]
+      },
+      {
+        "headline": "Open source model scanning tools remain active",
+        "source": "GitHub",
+        "published_at": "2026-04-02",
+        "url": "https://example.com/protectai-github",
+        "tags": [
+          "github_activity",
+          "technical_depth",
+          "open_source_signal"
+        ]
+      }
+    ],
+    "category": "Adjacent AI Security",
+    "universe_tier": "adjacent",
+    "score_breakdown": {
+      "market": 2,
+      "tech": 21,
+      "business": 6,
+      "momentum": 4
+    },
+    "total_score": 33,
+    "why_now": [
+      "Recent funding or financing signal suggests momentum."
+    ],
+    "unknowns": [
+      "Founder and operator credibility still needs direct verification.",
+      "Commercial traction is still thin from public evidence."
+    ],
+    "follow_up_questions": [
+      "Do the founders have repeat security or AI infrastructure wins?"
+    ]
+  },
+  {
+    "company_id": "adaptive-security",
+    "display_name": "Adaptive Security",
+    "aliases_seen": [
+      "Adaptive",
+      "Adaptive Security"
+    ],
+    "evidence": [
+      {
+        "headline": "Adaptive Security protects employees from AI attacks",
+        "source": "Website",
+        "published_at": "2026-04-06",
+        "url": "https://example.com/adaptive-site",
+        "tags": [
+          "ai_security_adjacent",
+          "enterprise_security",
+          "gtm_signal"
+        ]
+      },
+      {
+        "headline": "Adaptive Security raises awareness around AI-powered social engineering",
+        "source": "News",
+        "published_at": "2026-04-01",
+        "url": "https://example.com/adaptive-news",
+        "tags": [
+          "ai_security_adjacent",
+          "funding_signal",
+          "customer_signal"
+        ]
+      }
+    ],
+    "category": "Adjacent AI Security",
+    "universe_tier": "adjacent",
+    "score_breakdown": {
+      "market": 7,
+      "business": 22,
+      "momentum": 2
+    },
+    "total_score": 31,
+    "why_now": [
+      "Customer or partner evidence suggests commercial pull."
+    ],
+    "unknowns": [
+      "Founder and operator credibility still needs direct verification.",
+      "Needs a sharper wedge into agent-native security, not just broader AI security."
+    ],
+    "follow_up_questions": [
+      "Do the founders have repeat security or AI infrastructure wins?"
+    ]
+  },
+  {
+    "company_id": "cognition",
+    "display_name": "Cognition",
+    "aliases_seen": [
+      "Cognition",
+      "Cognition Labs"
+    ],
+    "evidence": [
+      {
+        "headline": "Cognition ships a new coding agent for software teams",
+        "source": "News",
+        "published_at": "2026-04-07",
+        "url": "https://example.com/cognition-news",
+        "tags": [
+          "agent_builder",
+          "launch_signal"
+        ]
+      },
+      {
+        "headline": "Cognition builds autonomous software engineering agents",
+        "source": "Website",
+        "published_at": "2026-04-06",
+        "url": "https://example.com/cognition-site",
+        "tags": [
+          "agent_builder",
+          "gtm_signal"
+        ]
+      }
+    ],
+    "category": "Out of Scope",
+    "universe_tier": "out_of_scope",
+    "score_breakdown": {
+      "momentum": 4,
+      "business": 5
+    },
+    "total_score": 9,
+    "why_now": [],
+    "unknowns": [
+      "Founder and operator credibility still needs direct verification.",
+      "Commercial traction is still thin from public evidence."
+    ],
+    "follow_up_questions": [
+      "Do the founders have repeat security or AI infrastructure wins?"
+    ]
+  }
+]
